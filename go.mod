@@ -1,4 +1,4 @@
-module github.com/StefOnMc/proxy-mc
+module github.com/StefOnMc/command
 
 go 1.19
 
