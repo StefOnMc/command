@@ -20,7 +20,4 @@ func (a Annonce) Run(s cmd.Source, o *cmd.Output) {
 	_, _ = chat.Global.WriteString(text.Colourf(strings.ReplaceAll(msg, "\\n", "\n")))
 }
 
-// Allow ...
-func (Annonce) Allow(s cmd.Source) bool {
-	return allow(s, true)
-}
+
