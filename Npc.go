@@ -13,7 +13,7 @@ type Npc struct {
 
 // Run will be called when the player runs the command. In this case, we will print the number back to the player
 func (c Npc) Run(source cmd.Source, output *cmd.Output) {
-	msg := strings.TrimSpace(string(a.Message))
+	msg := strings.TrimSpace(string(c.Message))
 	
 	if len(msg) == 0 {
 
