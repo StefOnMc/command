@@ -3,7 +3,6 @@ module github.com/StefOnMc/command
 go 1.19
 
 require (
-	github.com/StefOnMc/command v0.0.0-20230624090942-7e80e8c389b4
 	github.com/df-mc/dragonfly v0.9.7
 	github.com/pelletier/go-toml v1.9.5
 	github.com/sandertv/gophertunnel v1.30.0
