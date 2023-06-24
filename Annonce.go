@@ -5,7 +5,6 @@ import (
 	"github.com/df-mc/dragonfly/server/cmd"
 	"github.com/df-mc/dragonfly/server/player/chat"
 	"github.com/sandertv/gophertunnel/minecraft/text"
-	"github.com/StefOnMc/proxy-mc"
 )
 
 type Annonce struct {
