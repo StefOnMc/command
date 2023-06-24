@@ -8,7 +8,7 @@ import (
 )
 
 type Annonce struct {
-	
+	Message cmd.Varargs `cmd:"message"`
 }
 
 func (a Annonce) Run(s cmd.Source, o *cmd.Output) {
