@@ -17,7 +17,7 @@ func (a Annonce) Run(s cmd.Source, o *cmd.Output) {
 		o.Error("erreur merci bien de mettre un message")
 		return
 	}
-	_, _ = chat.Global.WriteString(PREFIX, text.Colourf(strings.ReplaceAll(msg, "\\n", "\n")))
+	_, _ = chat.Global.WriteString(text.Colourf(strings.ReplaceAll(msg, "\\n", "\n")))
 }
 
 
