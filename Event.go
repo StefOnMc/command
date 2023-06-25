@@ -17,6 +17,10 @@ type Event struct {
 	OptionalMessage cmd.Optional[string]
 	// The names of the fields can be anything and do not influence the text displayed in the form sent to the
 	// player.
+	
+}
+
+type Form struct {
 	Names  form.Dropdown
 	Input  form.Input
 	Amount form.Slider
@@ -35,7 +39,7 @@ func (c Event) Run(source cmd.Source, output *cmd.Output, p *player.Player) {
 // send shows SomeForm to a *player.Player.
 func send(p *player.Player) form.Form {
 	f := form.New(
-		Event{
+		Form{
 			Number: 0,
 			Names:  form.Dropdown{Text: "Dropdown text", Options: []string{"AAA", "BBB"}, DefaultIndex: 0},
 			Input:  form.Input{Text: "Input text", Default: "", Placeholder: "Hello, World!"},
